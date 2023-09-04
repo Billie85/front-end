@@ -1,0 +1,18 @@
+#container {
+  text-align: center;
+}
+
+.btn {
+  background-color: white;
+  color: cBlack;
+  border: 1px solid cBlack;
+  padding: 10px 40px;
+  margin: 230px 450px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.btn:hover {
+  background-color: rgb(231, 190, 115);
+  color: white;
+}/*# sourceMappingURL=style.css.map */
