@@ -1,17 +1,13 @@
 .parent {
     color: rgb(255, 102, 102);
 
-    & > .a {
+    & > .child {
         color: rgb(197, 127, 255);
-
-        &.b {
-            color: aqua;
+        &.second {
+            color: rgb(127, 255, 251);
         }
-        &.c {
-            color: rgb(246, 246, 127);
-        }
-        .element {
-            color: bisque;
+        &.hoge {
+            color: rgb(205, 223, 255);
         }
     }
 }

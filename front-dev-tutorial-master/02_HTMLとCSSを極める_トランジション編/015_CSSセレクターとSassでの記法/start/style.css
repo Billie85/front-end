@@ -1,15 +1,12 @@
 .parent {
   color: rgb(255, 102, 102);
 }
-.parent > .a {
+.parent > .child {
   color: rgb(197, 127, 255);
 }
-.parent > .a.b {
-  color: aqua;
+.parent > .child.second {
+  color: rgb(127, 255, 251);
 }
-.parent > .a.c {
-  color: rgb(246, 246, 127);
-}
-.parent > .a .element {
-  color: bisque;
+.parent > .child.hoge {
+  color: rgb(205, 223, 255);
 }/*# sourceMappingURL=style.css.map */
