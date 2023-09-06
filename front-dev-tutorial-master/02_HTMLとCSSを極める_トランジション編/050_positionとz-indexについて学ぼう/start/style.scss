@@ -1,28 +1,43 @@
 #container {
   padding: 1rem;
   background-color: gray;
+  position: relative;
 }
 
 div {
   font-weight: 600;
   padding: 0.5rem;
   font-size: 1.1em;
-  width: 150px;
+  width: 200px;
   height: 150px;
   box-shadow: 7px 7px 0 0 #000;
 }
 
 .div-1 {
   background: orange;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  transform: translate(100%, 100%);
+
 }
 .div-2 {
   background: tomato;
+  position: absolute;
+  top: 25px;
+  left: 50px;
+  transform: translate(220%, 100%);
 }
 .div-3 {
   background: teal;
+  top: 0;
+  left: 50px;
+  transform: translate(-10%, 100%);
 }
+
 .div-4 {
-  width: 80px;
-  height: 80px;
-  background-color: violet;
+  background: teal;
+  top: 0;
+  left: 50px;
+  transform: translate(-10%, 100%);
 }
