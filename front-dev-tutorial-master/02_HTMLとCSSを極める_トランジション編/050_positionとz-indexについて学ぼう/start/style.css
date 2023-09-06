@@ -2,83 +2,43 @@
   padding: 1rem;
   background-color: gray;
   position: relative;
-  perspective: 1000px;
 }
 
 div {
   font-weight: 600;
   padding: 0.5rem;
   font-size: 1.1em;
-  width: 60px;
-  height: 60px;
-  box-shadow: 5px 6px 6px 0px #414040;
-  border-radius: 7px;
-  transition: all 0.8s;
+  width: 200px;
+  height: 150px;
+  box-shadow: 7px 7px 0 0 #000;
 }
 
 .div-1 {
-  background: rgb(251, 193, 86);
+  background: orange;
   position: absolute;
-  top: 100px;
-  left: 100px;
-  /* cursor: pointer; */
-  transition: all 0.8s;
-}
-.div-1:hover {
-  position: absolute;
-  width: 100px;
-  height: 100px;
   top: 50px;
   left: 50px;
+  transform: translate(100%, 100%);
 }
 
 .div-2 {
-  background: rgb(247, 110, 85);
+  background: tomato;
   position: absolute;
-  top: 130px;
-  left: 130px;
-  /* cursor: pointer; */
-  transition: all 0.8s;
-}
-.div-2:hover {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 80px;
-  left: 80px;
+  top: 25px;
+  left: 50px;
+  transform: translate(220%, 100%);
 }
 
 .div-3 {
-  background: rgb(107, 205, 205);
-  position: absolute;
-  /* cursor: pointer; */
-  top: 160px;
-  left: 160px;
-  transition: all 0.8s;
+  background: teal;
+  top: 0;
+  left: 50px;
+  transform: translate(-10%, 100%);
 }
-
-.div-3:hover {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 100px;
-  left: 100px;
-}
-
 
 .div-4 {
-  background: rgb(119, 212, 104);
-  position: absolute;
-  /* cursor: pointer; */
-  top: 190px;
-  left: 190px;
-  transition: all 0.8s;
-}
-
-.div-4:hover {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 120px;
-  left: 120px;
-}
+  background: teal;
+  top: 0;
+  left: 50px;
+  transform: translate(-10%, 100%);
+}/*# sourceMappingURL=style.css.map */
