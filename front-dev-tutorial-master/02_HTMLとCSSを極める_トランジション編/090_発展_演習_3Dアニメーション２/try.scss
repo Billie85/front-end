@@ -15,8 +15,106 @@ $cBlack: black;
     margin: 0 auto;
     cursor: pointer;
 
+//共同なデザインや動き
     &.cubic {
-      /** スタイルをここに追加。*/
+      & span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        line-height: 48px;
+        box-sizing: border-box;
+        text-align: center;
+        transition: all 3s ease;
+      }
+//1
+      & .start {
+        background-color: rgb(209, 135, 252);
+        color: white;
+        transform: rotateX(-90deg);
+        transform-origin: center center -25px;
+      }
+
+      & .three {
+        background-color: rgb(219, 122, 206);
+        color: white;
+        transform: rotateX(180deg);
+        transform-origin: center center -25px;
+      }
+
+      & .two {
+        background-color: rgb(216, 227, 63);
+        color: white;
+        transform: rotateX(90deg);
+        transform-origin: center center -25px;
+      }
+
+      & .one {
+        background-color: rgb(38, 85, 216);
+        color: white;
+        transform: rotateX(0);
+        transform-origin: center center -25px;
+      }
+
+//2
+      //動かす
+      &:hover {
+        & .start {
+          transform: rotateX(-180deg);//下
+        }
+
+        & .three {
+          transform: rotateX(90deg);//裏
+        }
+
+        & .two {
+          transform: rotateX(0);//上
+        }
+
+        & .one {
+          transform: rotateX(-90deg);//前
+        }
+      }
+//3
+      &:hover {
+
+        & .one {
+          transform: rotateX(-180deg);
+        }
+
+        & .two {
+          transform: rotateX(-90deg);
+        }
+
+        & .three {
+          transform: rotateX(0);
+        }
+
+        & .start {
+          transform: rotateX(-275deg);
+        }
+      }
+
+//4
+      &:hover {
+        & .one {
+          transform: rotateX(-275deg);
+        }
+
+        & .two {
+          transform: rotateX(-180deg);
+        }
+
+        & .three {
+          transform: rotateX(-90deg);
+        }
+
+        & .start {
+          transform: rotateX(-360deg);
+        }
+      }
     }
   }
 }

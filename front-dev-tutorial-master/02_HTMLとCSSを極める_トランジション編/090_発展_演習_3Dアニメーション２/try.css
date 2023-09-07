@@ -1,4 +1,3 @@
-@charset "UTF-8";
 #container {
   text-align: center;
 }
@@ -13,6 +12,75 @@
   margin: 0 auto;
   cursor: pointer;
 }
-.try .btn.cubic {
-  /** スタイルをここに追加。*/
+.try .btn.cubic span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  line-height: 48px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: all 3s ease;
+}
+.try .btn.cubic .start {
+  background-color: rgb(209, 135, 252);
+  color: white;
+  transform: rotateX(-90deg);
+  transform-origin: center center -25px;
+}
+.try .btn.cubic .three {
+  background-color: rgb(219, 122, 206);
+  color: white;
+  transform: rotateX(180deg);
+  transform-origin: center center -25px;
+}
+.try .btn.cubic .two {
+  background-color: rgb(216, 227, 63);
+  color: white;
+  transform: rotateX(90deg);
+  transform-origin: center center -25px;
+}
+.try .btn.cubic .one {
+  background-color: rgb(38, 85, 216);
+  color: white;
+  transform: rotateX(0);
+  transform-origin: center center -25px;
+}
+.try .btn.cubic:hover .start {
+  transform: rotateX(-180deg);
+}
+.try .btn.cubic:hover .three {
+  transform: rotateX(90deg);
+}
+.try .btn.cubic:hover .two {
+  transform: rotateX(0);
+}
+.try .btn.cubic:hover .one {
+  transform: rotateX(-90deg);
+}
+.try .btn.cubic:hover .one {
+  transform: rotateX(-180deg);
+}
+.try .btn.cubic:hover .two {
+  transform: rotateX(-90deg);
+}
+.try .btn.cubic:hover .three {
+  transform: rotateX(0);
+}
+.try .btn.cubic:hover .start {
+  transform: rotateX(-275deg);
+}
+.try .btn.cubic:hover .one {
+  transform: rotateX(-275deg);
+}
+.try .btn.cubic:hover .two {
+  transform: rotateX(-180deg);
+}
+.try .btn.cubic:hover .three {
+  transform: rotateX(-90deg);
+}
+.try .btn.cubic:hover .start {
+  transform: rotateX(-360deg);
 }/*# sourceMappingURL=try.css.map */
