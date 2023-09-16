@@ -8,10 +8,8 @@ body {
   height: 100px;
   background-color: black;
   animation: sk-bouncedelay 1.4s;
-}
-
-.paused {
-  animation-play-state: paused;
+  animation-iteration-count: 3;
+  animation-direction: alternate-reverse;
 }
 
 @keyframes sk-bouncedelay {
@@ -21,6 +19,6 @@ body {
   }
   to {
     transform: scale(1);
-    background-color: green;
+    background-color: rgb(128, 0, 79);
   }
 }/*# sourceMappingURL=loader.css.map */

@@ -1,0 +1,9 @@
+@mixin animation(
+  $name,
+  $iteration-count: 4,
+  $reverse: alternate-reverse
+) {
+  animation-name: $name;
+  animation-iteration-count: $iteration-count;
+  animation-direction: $reverse;
+}

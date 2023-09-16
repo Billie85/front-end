@@ -1,0 +1,10 @@
+@use "test1" as *;
+@use "test2" as *;
+
+h1 {
+	color: $choge;
+}
+
+h2 {
+	color: $cgreen;
+}

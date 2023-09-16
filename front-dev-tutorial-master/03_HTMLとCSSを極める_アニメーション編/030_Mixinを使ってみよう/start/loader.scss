@@ -4,6 +4,15 @@ body {
   text-align: center;
 }
 
+@mixin animation(
+  $name:name,
+  $count: 3,
+  $alternate: alternate-reverse,
+){
+  animation-iteration-count: $count;
+  animation-direction: $alternate;
+}
+
 .rect {
   display: inline-block;
   width: 100px;
@@ -15,10 +24,7 @@ body {
   // animation-iteration-count: infinite;
   // animation-direction: alternate-reverse;
   // animation-fill-mode: both;
-}
-
-.paused {
-  animation-play-state: paused;
+  @include animation(sk-bouncedelay);
 }
 
 @keyframes sk-bouncedelay {
@@ -29,6 +35,6 @@ body {
 
   to {
     transform: scale(1);
-    background-color: green;
+    background-color: rgb(128, 0, 79);
   }
 }
